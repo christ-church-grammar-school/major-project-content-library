@@ -24,5 +24,13 @@ namespace Content_Library
         {
             InitializeComponent();
         }
+
+        private void loaded(object sender, RoutedEventArgs e)
+        {
+            
+            
+          mainframe.NavigationService.Navigate(new Page1());
+            
+        }
     }
 }

@@ -24,5 +24,10 @@ namespace Content_Library
         {
             InitializeComponent();
         }
+
+        private void clickcomit(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Page1());
+        }
     }
 }

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="800">
     <Grid>
-        <Frame Content="(/Content Library;component/goals.xaml)" HorizontalAlignment="Left" Height="472" VerticalAlignment="Top" Width="795" Source="/Content Library;component/goals.xaml"/>
+        <Frame x:Name="mainframe" Content="(/Content Library;component/goals.xaml)" HorizontalAlignment="Left" Height="472" VerticalAlignment="Top" Width="795" Source="/Content Library;component/goals.xaml" Loaded="loaded"/>
 
     </Grid>
 </Window>
