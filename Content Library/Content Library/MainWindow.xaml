@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Content_Library"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="800">
     <Grid>
-        <Frame Content="Frame" HorizontalAlignment="Left" Height="422" VerticalAlignment="Top" Width="795"/>
+        <Frame Content="(/Content Library;component/goals.xaml)" HorizontalAlignment="Left" Height="472" VerticalAlignment="Top" Width="795" Source="/Content Library;component/goals.xaml"/>
 
     </Grid>
 </Window>
