@@ -30,7 +30,7 @@ namespace Content_Library
             
             
           mainframe.NavigationService.Navigate(new Page1());
-            
+             
         }
     }
 }
