@@ -24,5 +24,10 @@ namespace Content_Library
         {
             InitializeComponent();
         }
+
+        private void goal_add(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
