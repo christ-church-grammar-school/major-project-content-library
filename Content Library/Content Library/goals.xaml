@@ -9,7 +9,7 @@
       Title="Page1">
 
     <Grid>
-        <ScrollBar HorizontalAlignment="Left" VerticalAlignment="Top" Height="350" Width="780" Margin="10,30,0,0"/>
+        <ScrollBar HorizontalAlignment="Left" VerticalAlignment="Top" Height="350" Width="780" Margin="10,30,0,0" Background="#FF666666"/>
         <Button Content="new goal" HorizontalAlignment="Left" Height="55" Margin="555,385,0,0" VerticalAlignment="Top" Width="235" Click="goal_add"/>
 
     </Grid>

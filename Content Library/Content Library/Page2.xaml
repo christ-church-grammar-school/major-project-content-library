@@ -8,14 +8,14 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page2">
 
-    <Grid Background="#FF393535">
-        <TextBox HorizontalAlignment="Left" Height="40" Margin="235,96,0,314" TextWrapping="Wrap" Text="TextBox" Width="305" Background="White" FontSize="36" RenderTransformOrigin="0.511,0.398"/>
+    <Grid Background="#FF797D8B">
+        <TextBox x:Name="Goal1" HorizontalAlignment="Left" Margin="235,96,0,305" TextWrapping="Wrap" Text="" Width="305" Background="#FF767AB9" FontSize="36" RenderTransformOrigin="0.511,0.398"/>
         <Label Content="goal name" HorizontalAlignment="Left" Height="81" Margin="235,10,0,0" VerticalAlignment="Top" Width="305" FontSize="48"/>
         <TextBox HorizontalAlignment="Left" Height="37" Margin="10,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" FontSize="24"/>
         <TextBox HorizontalAlignment="Left" Height="37" Margin="10,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" FontSize="24"/>
-        <TextBox HorizontalAlignment="Left" Height="37" Margin="10,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" FontSize="24"/>
-        <TextBox HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="268" Margin="272,319,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="232" Margin="558,319,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="37" Margin="10,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" FontSize="24" Background="#FF878AC7"/>
+        <TextBox HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="268" Margin="272,319,0,0" Background="#FF8083C6"/>
+        <TextBox HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="232" Margin="558,319,0,0" Background="#FF777AC3"/>
         <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Content="    select activities to help &#xD;&#xA;      you with your goals" HorizontalAlignment="Left" VerticalAlignment="Top" Height="82" Width="305" Margin="235,232,0,0" FontSize="22"/>
         <Button Content="commit to goal" HorizontalAlignment="Left" VerticalAlignment="Top" Width="181" Margin="303,389,0,0" Height="51" Click="clickcomit"/>
