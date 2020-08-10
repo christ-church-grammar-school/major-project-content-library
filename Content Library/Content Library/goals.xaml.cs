@@ -29,5 +29,10 @@ namespace Content_Library
         {
             this.NavigationService.Navigate(new Page2());
         }
+
+        private void ScrollBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+
+        }
     }
 }
