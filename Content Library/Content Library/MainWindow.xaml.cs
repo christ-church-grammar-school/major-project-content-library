@@ -29,7 +29,7 @@ namespace Content_Library
         {
             
             
-          mainframe.NavigationService.Navigate(new Page1());
+          mainframe.NavigationService.Navigate(new Goals());
              
         }
     }

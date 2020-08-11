@@ -12,22 +12,63 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Timers;
 
 namespace Content_Library
 {
+ 
+
     /// <summary>
-    /// Interaction logic for Page1.xaml
+
+    /// Interaction logic for MainWindow.xaml
+
     /// </summary>
-    public partial class Page1 : Page
+
+    public partial class Goals : Page
+
     {
-        public Page1()
+        
+        System.Windows.Threading.DispatcherTimer Timer = new System.Windows.Threading.DispatcherTimer();
+
+
+
+        public Goals()
+
         {
+
             InitializeComponent();
+
+            Timer.Tick += new EventHandler(Timer_Click);
+
+            Timer.Interval = new TimeSpan(0, 0, 1);
+
+            Timer.Start();
+
         }
 
-        private void goal_add(object sender, RoutedEventArgs e)
+
+
+        private void Timer_Click(object sender, EventArgs e)
+
         {
-            this.NavigationService.Navigate(new Page2());
+
+            DateTime d;
+
+            d = DateTime.Now;
+
+            clocklabel.Content = $"{d.Hour}:{d.Minute}:{d.Second} here is some more text";
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
-}
+
+}  
+
+
+
+
+
