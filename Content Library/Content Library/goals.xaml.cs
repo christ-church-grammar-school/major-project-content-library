@@ -28,6 +28,8 @@ namespace Content_Library
         private void goal_add(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new Page2());
+
+            
         }
     }
 }
