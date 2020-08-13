@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Windows;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,10 +27,7 @@ namespace Content_Library
 
         private void loaded(object sender, RoutedEventArgs e)
         {
-            
-            
-          mainframe.NavigationService.Navigate(new Page1());
-             
+           mainframe.NavigationService.Navigate(new Page1());
         }
     }
 }

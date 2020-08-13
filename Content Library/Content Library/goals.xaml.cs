@@ -30,9 +30,8 @@ namespace Content_Library
             this.NavigationService.Navigate(new Page2());
         }
 
-        private void goal_name(object sender, RoutedEventArgs e)
+        private void ScrollBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            Goal1.Text = textblock1.Text;
 
         }
     }
