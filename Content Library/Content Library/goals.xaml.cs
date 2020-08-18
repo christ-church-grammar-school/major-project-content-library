@@ -29,5 +29,10 @@ namespace Content_Library
         {
             this.NavigationService.Navigate(new Page2());
         }
+
+        private void Frame_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
     }
 }
