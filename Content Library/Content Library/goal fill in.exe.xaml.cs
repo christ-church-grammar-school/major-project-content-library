@@ -16,21 +16,13 @@ using System.Windows.Shapes;
 namespace Content_Library
 {
     /// <summary>
-    /// Interaction logic for Page1.xaml
+    /// Interaction logic for Page3.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class Page3 : Page
     {
-        public Page1()
+        public Page3()
         {
             InitializeComponent();
-        }
-
-        private void goal_add(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new Page2());
-
-
-            
         }
     }
 }

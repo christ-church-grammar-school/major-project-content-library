@@ -27,6 +27,18 @@ namespace Content_Library
 
         private void clickcomit(object sender, RoutedEventArgs e)
         {
+            
+           string goalnames = goalname.Text;
+            string goalhelper1 = activityone.Text;
+            string goalhelper2 = activitytwo.Text;
+            string goalhelper3 = activitythree.Text;
+            List<string> goals = new List<string> {goalnames ,goalhelper1 , goalhelper2 ,goalhelper3 };
+
+            MainWindow.importantdata.Append(goals);
+
+            
+
+            
             this.NavigationService.Navigate(new Page1());
         }
     }

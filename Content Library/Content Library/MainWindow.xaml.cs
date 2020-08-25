@@ -20,11 +20,14 @@ namespace Content_Library
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        public static List<List> importantdata = new List<List> { };
+
         public MainWindow()
         {
             InitializeComponent();
         }
-
+        
         private void loaded(object sender, RoutedEventArgs e)
         {
             
