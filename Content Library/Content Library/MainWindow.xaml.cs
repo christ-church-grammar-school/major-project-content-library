@@ -21,7 +21,7 @@ namespace Content_Library
     public partial class MainWindow : Window
     {
 
-        public static List<List> importantdata = new List<List> { };
+        public static List<List<String>> importantdata = new List<List<String>> { };
 
         public MainWindow()
         {

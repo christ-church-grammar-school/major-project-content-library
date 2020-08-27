@@ -34,7 +34,7 @@ namespace Content_Library
             string goalhelper3 = activitythree.Text;
             List<string> goals = new List<string> {goalnames ,goalhelper1 , goalhelper2 ,goalhelper3 };
 
-            MainWindow.importantdata.Append(goals);
+            MainWindow.importantdata.Add(goals);
 
             
 
