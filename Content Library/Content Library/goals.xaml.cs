@@ -27,10 +27,18 @@ namespace Content_Library
 
         private void goal_add(object sender, RoutedEventArgs e)
         {
+            var tabItem = new TabItem();
+            tabItem.Header = "My Tab Header";
+            tabItem.Content = new Page3();
+            maintabcontroal.Items.Add(tabItem);
             this.NavigationService.Navigate(new Page2());
-            
+           
 
-            
+        }
+
+        private void maintabcontroal_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

@@ -10,19 +10,11 @@
 
     <Grid>
         <Button Content="new goal" HorizontalAlignment="Left" Height="55" Margin="555,435,0,0" VerticalAlignment="Top" Width="235" Click="goal_add"/>
-        <TabControl HorizontalAlignment="Left" Height="430" VerticalAlignment="Top" Width="790">
-            <TabItem Header="TabItem">
-                <Grid Background="#FFE5E5E5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="33*"/>
-                        <ColumnDefinition Width="751*"/>
-                    </Grid.ColumnDefinitions>
-                </Grid>
-            </TabItem>
-            <TabItem Header="TabItem">
-                <Grid Background="#FFE5E5E5">
-                    <Frame Content="Frame" HorizontalAlignment="Left" Height="402" VerticalAlignment="Top" Width="784"/>
-                </Grid>
+        <TabControl x:Name="maintabcontroal" HorizontalAlignment="Left" Height="430" VerticalAlignment="Top" Width="790" SelectionChanged="maintabcontroal_SelectionChanged">
+            <TabItem Header="TabItem" Content="">
+                <TabItem.DataContext>
+                    <local:Page3/>
+                </TabItem.DataContext>
             </TabItem>
         </TabControl>
 
