@@ -27,7 +27,7 @@ namespace Content_Library
 
         private void clickcomit(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Page1());
+            this.NavigationService.Navigate(new Goals());
         }
     }
 }
