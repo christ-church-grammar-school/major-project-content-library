@@ -42,7 +42,7 @@ namespace Content_Library
             InitializeComponent();
             Timer = new DispatcherTimer();
             Timer.Interval = new TimeSpan(0, 0, 1);
-            Timer.Tick += Timer_Tick;
+            //Timer.Tick += Timer_Tick;
             Timer.Start();
 
             Timer.Tick += new EventHandler(Timer_Click);
