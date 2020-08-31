@@ -25,7 +25,7 @@ namespace Content_Library
             InitializeComponent();
         }
 
-        private void goal_add(object sender, RoutedEventArgs e)
+        public void goal_add(object sender, RoutedEventArgs e)
         {
             var tabItem = new TabItem();
             tabItem.Header = "My Tab Header";

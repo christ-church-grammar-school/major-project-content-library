@@ -25,7 +25,7 @@ namespace Content_Library
             InitializeComponent();
         }
 
-        private void clickcomit(object sender, RoutedEventArgs e)
+        public void clickcomit(object sender, RoutedEventArgs e)
         {
             
            string goalnames = goalname.Text;
