@@ -35,7 +35,7 @@ namespace Content_Library
             List<string> goals = new List<string> {goalnames ,goalhelper1 , goalhelper2 ,goalhelper3 };
 
             MainWindow.importantdata.Add(goals);
-
+            
             
 
             
