@@ -9,9 +9,14 @@
       Title="Goals">
 
     <Grid>
-        <ScrollBar HorizontalAlignment="Left" VerticalAlignment="Top" Height="350" Width="780" Margin="10,30,0,0"/>
-        <Button Content="new goal" HorizontalAlignment="Left" Height="55" Margin="555,385,0,0" VerticalAlignment="Top" Width="235" Click="Button_Click"/>
-        <Label x:Name="clocklabel" Content="00:00:00" HorizontalAlignment="Left" Margin="252,249,0,0" VerticalAlignment="Top" Height="87" Width="156" FontSize="40"/>
-        <TextBlock Name="TBCountDown" Width="300" Height="150" TextAlignment="Center" FontSize="70" FontFamily="Segoe UI Light"></TextBlock>
+        <Button Content="new goal" HorizontalAlignment="Left" Height="55" Margin="555,435,0,0" VerticalAlignment="Top" Width="235" Click="goal_add"/>
+        <TabControl x:Name="maintabcontroal" HorizontalAlignment="Left" Height="430" VerticalAlignment="Top" Width="790" SelectionChanged="maintabcontroal_SelectionChanged">
+            <TabItem Header="TabItem" Content="">
+                <TabItem.DataContext>
+                    <local:Page3/>
+                </TabItem.DataContext>
+            </TabItem>
+        </TabControl>
+
     </Grid>
 </Page>

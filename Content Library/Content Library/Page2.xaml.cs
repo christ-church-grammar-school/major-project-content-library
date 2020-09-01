@@ -25,9 +25,21 @@ namespace Content_Library
             InitializeComponent();
         }
 
-        private void clickcomit(object sender, RoutedEventArgs e)
+        public void clickcomit(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Goals());
+            
+           string goalnames = goalname.Text;
+            string goalhelper1 = activityone.Text;
+            string goalhelper2 = activitytwo.Text;
+            string goalhelper3 = activitythree.Text;
+            List<string> goals = new List<string> {goalnames ,goalhelper1 , goalhelper2 ,goalhelper3 };
+
+            MainWindow.importantdata.Add(goals);
+            
+            
+
+            
+            this.NavigationService.Navigate(new Page1());
         }
     }
 }

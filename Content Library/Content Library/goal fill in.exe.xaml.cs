@@ -16,24 +16,13 @@ using System.Windows.Shapes;
 namespace Content_Library
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Page3.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Page3 : Page
     {
-
-        public static List<List<String>> importantdata = new List<List<String>> { };
-
-        public MainWindow()
+        public Page3()
         {
             InitializeComponent();
-        }
-        
-        private void loaded(object sender, RoutedEventArgs e)
-        {
-            
-            
-          mainframe.NavigationService.Navigate(new Goals());
-             
         }
     }
 }
