@@ -39,7 +39,7 @@ namespace Content_Library
             
 
             
-            this.NavigationService.Navigate(new Page1());
+            this.NavigationService.Navigate(new Goals());
         }
     }
 }
