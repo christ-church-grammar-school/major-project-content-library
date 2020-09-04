@@ -32,7 +32,48 @@ namespace Content_Library
         System.Windows.Threading.DispatcherTimer Timer = new System.Windows.Threading.DispatcherTimer();
 
         private int time = 0;
-        private DispatcherTimer Timer3;
+        private DispatcherTimer 
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            Timer3;
 
 
         public Goals()
@@ -96,20 +137,26 @@ namespace Content_Library
         }
 
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            var tabItem = new TabItem();
-            tabItem.Header = "My Tab Header";
-            tabItem.Content = new Page3();
-            maintabcontroal.Items.Add(tabItem);
-            this.NavigationService.Navigate(new Page2());
-           
-
-        }
-
+       
         private void maintabcontroal_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void goal_add(object sender, RoutedEventArgs e)
+        {
+            
+            this.NavigationService.Navigate(new Page2());
+        }
+
+        private void i(object sender, RoutedEventArgs e)
+        {
+            var namessssss = Page2.goalnamess;
+            var tabItem = new TabItem();
+            tabItem.Header = namessssss;
+            tabItem.Content = " ";
+            maintabcontroal.Items.Add(tabItem);
+            
         }
     }
 

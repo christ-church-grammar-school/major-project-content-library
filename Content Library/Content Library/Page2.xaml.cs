@@ -20,12 +20,17 @@ namespace Content_Library
     /// </summary>
     public partial class Page2 : Page
     {
+        public static string goalnamess;
         public Page2()
         {
             InitializeComponent();
         }
+        
+            public static List<string> goals = new List<string> { };
+        
+    
 
-        public void clickcomit(object sender, RoutedEventArgs e)
+        public void Clickcomit(object sender, RoutedEventArgs e)
         {
             
            string goalnames = goalname.Text;
@@ -35,11 +40,13 @@ namespace Content_Library
             List<string> goals = new List<string> {goalnames ,goalhelper1 , goalhelper2 ,goalhelper3 };
 
             MainWindow.importantdata.Add(goals);
-            
-            
+
+            goalnamess = goalnames;
 
             
-            this.NavigationService.Navigate(new Page1());
+            this.NavigationService.Navigate(new Goals());
         }
-    }
+
+    }    
+    
 }
