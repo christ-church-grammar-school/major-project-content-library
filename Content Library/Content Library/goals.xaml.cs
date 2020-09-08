@@ -104,7 +104,7 @@ namespace Content_Library
 
             d = DateTime.Now;
 
-            clocklabel.Content = $"{d.Hour}:{d.Minute}:{d.Second} here is some more text";
+            clocklabel.Content = $"{d.Hour}:{d.Minute}:{d.Second} ";
 
         }
 
