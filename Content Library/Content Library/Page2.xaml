@@ -14,8 +14,8 @@
                 <ImageBrush ImageSource="logo.png"/>
             </Grid.Background>
         </Grid>
-        <TextBox x:Name="goalname" HorizontalAlignment="Left" Margin="248,181,0,218" TextWrapping="Wrap" Width="305" Background="White" FontSize="36" RenderTransformOrigin="0.511,0.398"/>
-        <Label Content="goal name" HorizontalAlignment="Left" Height="51" Margin="318,125,0,0" VerticalAlignment="Top" Width="166" FontSize="30" Foreground="#FF898410"/>
+        <TextBox x:Name="goalname" HorizontalAlignment="Left" Margin="248,181,0,375" TextWrapping="Wrap" Width="305" Height="51" Background="White" FontSize="36" RenderTransformOrigin="0.511,0.398"/>
+        <Label Content="GOAL NAME" HorizontalAlignment="Left" Height="51" Margin="303,125,0,0" VerticalAlignment="Top" Width="206" FontSize="30" Foreground="#FF898410"/>
         <TextBox HorizontalAlignment="Left" Height="37" Margin="10,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" FontSize="24"/>
         <TextBox HorizontalAlignment="Left" Height="37" Margin="10,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" FontSize="24"/>
         <TextBox x:Name="activityone" HorizontalAlignment="Left" Height="37" Margin="10,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" FontSize="24"/>
