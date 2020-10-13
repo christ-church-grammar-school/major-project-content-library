@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Content_Library
+namespace test1_programic_creation
 {
     /// <summary>
-    /// Interaction logic for Page3.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class Page3 : Page
+    public partial class MainWindow : Window
     {
-        public Page3()
+        public MainWindow()
         {
             InitializeComponent();
         }
@@ -36,13 +36,13 @@ namespace Content_Library
                 btn.Width = 100;
 
 
-                btn.Content = newname.Text;
+                btn.Content = newname.Text ;
 
                 btn.Background = new SolidColorBrush(Colors.Orange);
 
                 btn.Foreground = new SolidColorBrush(Colors.Black);
 
-                doxx.Children.Add(btn);
+                SP.Children.Add(btn);
 
             }
         }

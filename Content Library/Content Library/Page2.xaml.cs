@@ -32,8 +32,9 @@ namespace Content_Library
 
         public void Clickcomit(object sender, RoutedEventArgs e)
         {
-            
-           string goalnames = goalname.Text;
+
+            string goalnames = goalname.Text;
+
             string goalhelper1 = activityone.Text;
             string goalhelper2 = activitytwo.Text;
             string goalhelper3 = activitythree.Text;
