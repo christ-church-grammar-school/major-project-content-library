@@ -32,16 +32,17 @@ namespace Content_Library
 
         public void Clickcomit(object sender, RoutedEventArgs e)
         {
-            
-           string goalnames = goalname.Text;
-            string goalhelper1 = activityone.Text;
-            string goalhelper2 = activitytwo.Text;
-            string goalhelper3 = activitythree.Text;
-            List<string> goals = new List<string> {goalnames ,goalhelper1 , goalhelper2 ,goalhelper3 };
+            Goal g = new Goal(goalname.Text);
 
-            MainWindow.importantdata.Add(goals);
+            g.activites.Add(new Activity(activityone.Text));
+            g.activites.Add(new Activity(activitytwo.Text));
+            g.activites.Add(new Activity(activitythree.Text));
 
-            goalnamess = goalnames;
+            //List<string> goals = new List<string> {goalnames ,goalhelper1 , goalhelper2 ,goalhelper3 };
+
+            //MainWindow.importantdata.Add(goals);
+
+            //goalnamess = goalnames;
 
             
             this.NavigationService.Navigate(new Goals());

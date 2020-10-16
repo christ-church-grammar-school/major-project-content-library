@@ -32,55 +32,19 @@ namespace Content_Library
         System.Windows.Threading.DispatcherTimer Timer = new System.Windows.Threading.DispatcherTimer();
 
         private int time = 0;
-        private DispatcherTimer 
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            Timer3;
+        private DispatcherTimer Timer3;
 
-
-        public Goals()
+        public Goal goal;
+            
+     
+        public Goals(Goal g)
 
         {
 
             InitializeComponent();
+
+            goal = g; 
+            
             Timer = new DispatcherTimer();
             Timer.Interval = new TimeSpan(0, 0, 1);
             //Timer.Tick += Timer_Tick;
