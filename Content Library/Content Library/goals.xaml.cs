@@ -43,7 +43,9 @@ namespace Content_Library
 
             InitializeComponent();
 
-            goal = g; 
+            goal = g;
+
+
             
             Timer = new DispatcherTimer();
             Timer.Interval = new TimeSpan(0, 0, 1);
@@ -110,12 +112,12 @@ namespace Content_Library
         private void goal_add(object sender, RoutedEventArgs e)
         {
             
-            this.NavigationService.Navigate(new Page2());
+            this.NavigationService.Navigate(new GoalEntry());
         }
 
         private void i(object sender, RoutedEventArgs e)
         {
-            var namessssss = Page2.goalnamess;
+            var namessssss = GoalEntry.goalnamess;
             var tabItem = new TabItem();
             tabItem.Header = namessssss;
             tabItem.Content = " ";

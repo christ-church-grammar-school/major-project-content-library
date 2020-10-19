@@ -18,10 +18,10 @@ namespace Content_Library
     /// <summary>
     /// Interaction logic for Page2.xaml
     /// </summary>
-    public partial class Page2 : Page
+    public partial class GoalEntry : Page
     {
         public static string goalnamess;
-        public Page2()
+        public GoalEntry()
         {
             InitializeComponent();
         }
@@ -45,7 +45,7 @@ namespace Content_Library
             //goalnamess = goalnames;
 
             
-            this.NavigationService.Navigate(new Goals());
+            this.NavigationService.Navigate(new Goals(g));
         }
 
     }    

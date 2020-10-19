@@ -18,9 +18,9 @@ namespace Content_Library
     /// <summary>
     /// Interaction logic for Page3.xaml
     /// </summary>
-    public partial class Page3 : Page
+    public partial class GoalReview : Page
     {
-        public Page3()
+        public GoalReview()
         {
             InitializeComponent();
         }

@@ -31,8 +31,7 @@ namespace Content_Library
         private void loaded(object sender, RoutedEventArgs e)
         {
             
-            
-          mainframe.NavigationService.Navigate(new Goals());
+          //mainframe.NavigationService.Navigate(new GoalEntry());
              
         }
     }

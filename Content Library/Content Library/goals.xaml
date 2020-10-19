@@ -13,14 +13,14 @@
         <TabControl x:Name="maintabcontroal" HorizontalAlignment="Left" Height="403" VerticalAlignment="Top" Width="790" SelectionChanged="maintabcontroal_SelectionChanged" Margin="0,27,0,0">
             <TabItem Header="TabItem" Content="" >
                 <TabItem.DataContext>
-                    <local:Page3/>
+                    <local:GoalReview/>
                 </TabItem.DataContext>
             </TabItem>
 
         </TabControl>
         <Label x:Name="clocklabel" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="588,10,0,0" Height="31" Width="180" AutomationProperties.IsRowHeader="True" Background="#FFCC2C2C" FontSize="18"/>
         <TextBlock x:Name="TBCountDown" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="182,168,0,0" Height="69" Width="222"/>
-        <Frame x:Name="inner_frame" Content="Frame" HorizontalAlignment="Left" Height="370" VerticalAlignment="Top" Width="771" Margin="19,60,0,0" Source="/Content Library;component/goal fill in.exe.xaml" Loaded="i" />
+        <Frame x:Name="inner_frame" Content="Frame" HorizontalAlignment="Left" Height="370" VerticalAlignment="Top" Width="771" Margin="19,60,0,0" Source="/Content Library;component/GoalReview.xaml" Loaded="i" />
 
     </Grid>
 </Page>

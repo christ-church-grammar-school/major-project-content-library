@@ -73,11 +73,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Page2.xaml">
+    <Page Include="GoalEntry.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="goal fill in.exe.xaml">
+    <Page Include="GoalReview.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -86,11 +86,11 @@
     <Compile Include="Goals.xaml.cs">
       <DependentUpon>Goals.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page2.xaml.cs">
-      <DependentUpon>Page2.xaml</DependentUpon>
+    <Compile Include="GoalEntry.xaml.cs">
+      <DependentUpon>GoalEntry.xaml</DependentUpon>
     </Compile>
-    <Compile Include="goal fill in.exe.xaml.cs">
-      <DependentUpon>goal fill in.exe.xaml</DependentUpon>
+    <Compile Include="GoalReview.xaml.cs">
+      <DependentUpon>GoalReview.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
