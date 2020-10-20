@@ -32,21 +32,15 @@ namespace Content_Library
         System.Windows.Threading.DispatcherTimer Timer = new System.Windows.Threading.DispatcherTimer();
 
         private int time = 0;
-        private DispatcherTimer Timer3;
-
-        public Goal goal;
-            
+        private DispatcherTimer Timer3;       
      
-        public Goals(Goal g)
+        public Goals()
 
         {
 
             InitializeComponent();
 
-            goal = g;
-
-
-            
+           
             Timer = new DispatcherTimer();
             Timer.Interval = new TimeSpan(0, 0, 1);
             //Timer.Tick += Timer_Tick;
@@ -115,13 +109,21 @@ namespace Content_Library
             this.NavigationService.Navigate(new GoalEntry());
         }
 
-        private void i(object sender, RoutedEventArgs e)
+        private void LoadGoals(object sender, RoutedEventArgs e)
         {
-            var namessssss = GoalEntry.goalnamess;
-            var tabItem = new TabItem();
-            tabItem.Header = namessssss;
-            tabItem.Content = " ";
-            maintabcontroal.Items.Add(tabItem);
+            //var namessssss = GoalEntry.goalnamess;
+            //var tabItem = new TabItem();
+            //tabItem.Header = namessssss;
+            //tabItem.Content = " ";
+            //maintabcontroal.Items.Add(tabItem);
+
+            foreach(var goal in MainWindow.goals) 
+            {
+                var tabItem = new TabItem();
+                tabItem.Header = goal.title;
+                
+                maintabcontroal.Items.Add(tabItem);
+            }
             
         }
     }

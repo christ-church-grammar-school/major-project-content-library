@@ -12,8 +12,6 @@ namespace Content_Library
 		public List<Activity> activites;
 		public bool completed;
 
-		//public static List<Goal>;
-
 		public Goal(string t)
 		{
 			title = t;

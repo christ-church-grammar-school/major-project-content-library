@@ -24,12 +24,10 @@ namespace Content_Library
         public GoalEntry()
         {
             InitializeComponent();
-        }
-        
-            public static List<string> goals = new List<string> { };
-        
-    
 
+            goalnamess = "We did it!";
+        }
+   
         public void Clickcomit(object sender, RoutedEventArgs e)
         {
             Goal g = new Goal(goalname.Text);
@@ -38,6 +36,8 @@ namespace Content_Library
             g.activites.Add(new Activity(activitytwo.Text));
             g.activites.Add(new Activity(activitythree.Text));
 
+            MainWindow.goals.Add(g);
+
             //List<string> goals = new List<string> {goalnames ,goalhelper1 , goalhelper2 ,goalhelper3 };
 
             //MainWindow.importantdata.Add(goals);
@@ -45,7 +45,7 @@ namespace Content_Library
             //goalnamess = goalnames;
 
             
-            this.NavigationService.Navigate(new Goals(g));
+            this.NavigationService.Navigate(new Goals());
         }
 
     }    

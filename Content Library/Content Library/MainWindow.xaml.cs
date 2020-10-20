@@ -23,14 +23,19 @@ namespace Content_Library
 
         public static List<List<String>> importantdata = new List<List<String>> { };
 
+        public static List<Goal> goals;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            goals = new List<Goal>();
         }
         
         private void loaded(object sender, RoutedEventArgs e)
         {
-            
+           
+          //Not needed because xaml content is already GoalEntry
           //mainframe.NavigationService.Navigate(new GoalEntry());
              
         }
