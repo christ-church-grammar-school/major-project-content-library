@@ -32,7 +32,7 @@ namespace Content_Library
         System.Windows.Threading.DispatcherTimer Timer = new System.Windows.Threading.DispatcherTimer();
 
         private int time = 0;
-        private DispatcherTimer Timer3;       
+        private DispatcherTimer Timer3;     
      
         public Goals()
 
@@ -121,7 +121,8 @@ namespace Content_Library
             {
                 var tabItem = new TabItem();
                 tabItem.Header = goal.title;
-                
+                tabItem.Content = new GoalReview();
+
                 maintabcontroal.Items.Add(tabItem);
             }
             
