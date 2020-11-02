@@ -125,21 +125,22 @@ namespace Content_Library
 
                 btn.Width = 150;
 
-                btn.Content = goal.title;
+                btn.Content = goal;
 
                 btn.Background = new SolidColorBrush(Colors.Orange);
 
                 btn.Foreground = new SolidColorBrush(Colors.Black);
+                btn.Click += new RoutedEventHandler(b_Click);
 
                 listbox1.Items.Add(btn);
             }
             
         }
-
-        private void listbox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void b_Click(object sender, RoutedEventArgs e)
         {
-
+            //do your button stuff here
         }
+
     }
 
 }  

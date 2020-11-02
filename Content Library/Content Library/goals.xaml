@@ -8,11 +8,11 @@
       d:DesignHeight="500" d:DesignWidth="800"
       Title="Goals">
 
-    <Grid Background="#FF091D54">
+    <Grid Background="#FF012247">
         <Button Content="new goal" HorizontalAlignment="Left" Height="55" Margin="555,435,0,0" VerticalAlignment="Top" Width="235" Click="goal_add"/>
         <TextBlock x:Name="TBCountDown" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="555,71,0,0" Height="69" Width="222"/>
         <ListBox HorizontalAlignment="Left" Height="100" Margin="520,300,0,0" VerticalAlignment="Top" Width="100"/>
-        <ListBox x:Name="listbox1" HorizontalAlignment="Left" Height="373" VerticalAlignment="Top" Width="800" Background="#FF012247" SelectionChanged="listbox1_SelectionChanged" Margin="0,57,0,0"/>
+        <ListBox x:Name="listbox1" HorizontalAlignment="Left" Height="373" VerticalAlignment="Top" Width="800" Background="#FF012247"  Margin="0,57,0,0" BorderBrush="#FF012247"/>
         <Label x:Name="clocklabel" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="588,10,0,0" Height="31" Width="180" AutomationProperties.IsRowHeader="True" Background="#FFCC2C2C" FontSize="18"/>
         <Label Content="home?" HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="325" FontSize="30"/>
 
