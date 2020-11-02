@@ -32,55 +32,15 @@ namespace Content_Library
         System.Windows.Threading.DispatcherTimer Timer = new System.Windows.Threading.DispatcherTimer();
 
         private int time = 0;
-        private DispatcherTimer 
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            Timer3;
-
-
+        private DispatcherTimer Timer3;     
+     
         public Goals()
 
         {
 
             InitializeComponent();
+
+           
             Timer = new DispatcherTimer();
             Timer.Interval = new TimeSpan(0, 0, 1);
             //Timer.Tick += Timer_Tick;
@@ -94,7 +54,7 @@ namespace Content_Library
 
         }
 
-
+        
 
         private void Timer_Click(object sender, EventArgs e)
 
@@ -146,17 +106,39 @@ namespace Content_Library
         private void goal_add(object sender, RoutedEventArgs e)
         {
             
-            this.NavigationService.Navigate(new Page2());
+            this.NavigationService.Navigate(new GoalEntry());
         }
 
-        private void i(object sender, RoutedEventArgs e)
+        private void LoadGoals(object sender, RoutedEventArgs e)
         {
-            var namessssss = Page2.goalnamess;
-            var tabItem = new TabItem();
-            tabItem.Header = namessssss;
-            tabItem.Content = " ";
-            maintabcontroal.Items.Add(tabItem);
+            //var namessssss = GoalEntry.goalnamess;
+            //var tabItem = new TabItem();
+            //tabItem.Header = namessssss;
+            //tabItem.Content = " ";
+            //maintabcontroal.Items.Add(tabItem);
+
+            foreach(var goal in MainWindow.goals) 
+            {
+                Button btn = new Button();
+
+                btn.Height = 80;
+
+                btn.Width = 150;
+
+                btn.Content = goal.title;
+
+                btn.Background = new SolidColorBrush(Colors.Orange);
+
+                btn.Foreground = new SolidColorBrush(Colors.Black);
+
+                listbox1.Items.Add(btn);
+            }
             
+        }
+
+        private void listbox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 

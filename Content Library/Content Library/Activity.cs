@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Content_Library
 {
-	class Activity
+	public class Activity
 	{
 		public string name;
 		public bool completed;

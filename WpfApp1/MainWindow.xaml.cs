@@ -13,31 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Content_Library
+namespace WpfApp1
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-
-        public static List<List<String>> importantdata = new List<List<String>> { };
-
-        public static List<Goal> goals;
-
         public MainWindow()
         {
             InitializeComponent();
-
-            goals = new List<Goal>();
-        }
-        
-        private void loaded(object sender, RoutedEventArgs e)
-        {
-           
-          //Not needed because xaml content is already GoalEntry
-          //mainframe.NavigationService.Navigate(new GoalEntry());
-             
         }
     }
 }

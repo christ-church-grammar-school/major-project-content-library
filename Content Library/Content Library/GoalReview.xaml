@@ -1,4 +1,4 @@
-﻿<Page x:Class="Content_Library.Page3"
+﻿<Page x:Class="Content_Library.GoalReview"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -13,11 +13,7 @@
             <Label Content="where goal name will be" HorizontalAlignment="Left" Height="65" Margin="158,35,0,0" VerticalAlignment="Top" Width="423" FontSize="36"/>
             <ProgressBar HorizontalAlignment="Left" Height="31" Margin="39,118,0,0" VerticalAlignment="Top" Width="736"/>
             <CheckBox Content="CheckBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="464,274,0,0"/>
-            <ListBox HorizontalAlignment="Left" Height="239" VerticalAlignment="Top" Width="736" Margin="39,170,0,0" >
-                <CheckBox Content="CheckBox"/>
-                <CheckBox Content="CheckBox"/>
-                <CheckBox Content="CheckBox"/>
-                <CheckBox Content="CheckBox"/>
+            <ListBox x:Name="ActivityListBox" HorizontalAlignment="Left" Height="239" VerticalAlignment="Top" Width="736" Margin="39,170,0,0" >
                 <CheckBox Content="CheckBox"/>
             </ListBox>
 
