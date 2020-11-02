@@ -54,7 +54,7 @@ namespace Content_Library
 
         }
 
-
+        
 
         private void Timer_Click(object sender, EventArgs e)
 
@@ -119,13 +119,26 @@ namespace Content_Library
 
             foreach(var goal in MainWindow.goals) 
             {
-                var tabItem = new TabItem();
-                tabItem.Header = goal.title;
-                tabItem.Content = new GoalReview();
+                Button btn = new Button();
 
-                maintabcontroal.Items.Add(tabItem);
+                btn.Height = 80;
+
+                btn.Width = 150;
+
+                btn.Content = goal.title;
+
+                btn.Background = new SolidColorBrush(Colors.Orange);
+
+                btn.Foreground = new SolidColorBrush(Colors.Black);
+
+                listbox1.Items.Add(btn);
             }
             
+        }
+
+        private void listbox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 
