@@ -134,7 +134,8 @@ namespace Content_Library
             
             foreach (var goal in MainWindow.goals)
             {
-                
+                 
+
                 g += 80;
                 ng -= 80;
                 if (g == 400) ;
