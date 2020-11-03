@@ -19,8 +19,8 @@
         <TextBox HorizontalAlignment="Left" Height="37" Margin="10,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" FontSize="24"/>
         <TextBox HorizontalAlignment="Left" Height="37" Margin="10,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" FontSize="24"/>
         <TextBox x:Name="activityone" HorizontalAlignment="Left" Height="37" Margin="10,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" FontSize="24"/>
-        <TextBox x:Name="activitytwo" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" Margin="272,319,0,0"/>
-        <TextBox x:Name="activitythree" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" Margin="558,319,0,0"/>
+        <TextBox x:Name="activitytwo" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" Margin="272,319,0,0" FontSize="24"/>
+        <TextBox x:Name="activitythree" HorizontalAlignment="Left" Height="37" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" Margin="558,319,0,0" FontSize="24"/>
         <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Content="    select activities to help &#xA;      you with your goals" HorizontalAlignment="Left" VerticalAlignment="Top" Height="82" Width="305" Margin="248,232,0,0" FontSize="22" Foreground="#FF948516"/>
         <Button Content="commit to goal" HorizontalAlignment="Left" VerticalAlignment="Top" Width="181" Margin="303,389,0,0" Height="51" Click="Clickcomit"/>
