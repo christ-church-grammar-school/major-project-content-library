@@ -37,30 +37,7 @@ namespace Content_Library
         public Goal goal;
             
      
-        public Goals(Goal g)
-
-        {
-
-            InitializeComponent();
-
-            goal = g;
-
-
-            
-            Timer = new DispatcherTimer();
-            Timer.Interval = new TimeSpan(0, 0, 1);
-            //Timer.Tick += Timer_Tick;
-            Timer.Start();
-
-            Timer.Tick += new EventHandler(Timer_Click);
-
-            Timer.Interval = new TimeSpan(0, 0, 1);
-
-            Timer.Start();
-
-        }
-
-
+      
 
         private void Timer_Click(object sender, EventArgs e)
 
