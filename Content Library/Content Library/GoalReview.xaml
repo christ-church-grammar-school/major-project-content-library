@@ -18,6 +18,7 @@
             </ListBox>
 
         </Grid>
+        <Button Content="Back" HorizontalAlignment="Left" Height="26" Margin="592,414,0,0" VerticalAlignment="Top" Width="185" Click="back"/>
 
     </Grid>
 </Page>

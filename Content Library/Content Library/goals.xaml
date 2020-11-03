@@ -12,9 +12,10 @@
         <Button Content="new goal" HorizontalAlignment="Left" Height="55" Margin="555,435,0,0" VerticalAlignment="Top" Width="235" Click="goal_add"/>
         <TextBlock x:Name="TBCountDown" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="555,71,0,0" Height="69" Width="222"/>
         <ListBox HorizontalAlignment="Left" Height="100" Margin="520,300,0,0" VerticalAlignment="Top" Width="100"/>
-        <ListBox x:Name="listbox1" HorizontalAlignment="Left" Height="373" VerticalAlignment="Top" Width="800" Background="#FF012247"  Margin="0,57,0,0" BorderBrush="#FF012247"/>
-        <Label x:Name="clocklabel" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="588,10,0,0" Height="31" Width="180" AutomationProperties.IsRowHeader="True" Background="#FFCC2C2C" FontSize="18"/>
-        <Label Content="home?" HorizontalAlignment="Left" Height="52" VerticalAlignment="Top" Width="325" FontSize="30"/>
+        <ListBox x:Name="listbox1" HorizontalAlignment="Left" Height="85" VerticalAlignment="Top" Width="180" Background="#FF012247"  Margin="597,300,0,0" BorderBrush="#FF012247" Loaded="loadedp0age"/>
+        <Label x:Name="clocklabel" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="588,10,0,0" Height="31" Width="180" AutomationProperties.IsRowHeader="True" Background="#FFCC2C2C" FontSize="18" BorderBrush="Black" Foreground="Black"/>
+        <StackPanel x:Name="listbox12" HorizontalAlignment="Left" Height="366" VerticalAlignment="Top" Width="780" Background="White" Margin="10,57,0,0"/>
+        <Label Content="Home?" HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="325" FontSize="40" Margin="136,-7,0,0"/>
 
     </Grid>
 </Page>

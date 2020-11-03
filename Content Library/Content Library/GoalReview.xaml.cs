@@ -24,5 +24,10 @@ namespace Content_Library
         {
             InitializeComponent();
         }
+
+        private void back(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Goals());
+        }
     }
 }

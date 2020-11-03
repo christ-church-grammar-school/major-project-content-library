@@ -17,7 +17,7 @@ using System.Windows.Threading;
 
 namespace Content_Library
 {
- 
+
 
     /// <summary>
 
@@ -28,19 +28,19 @@ namespace Content_Library
     public partial class Goals : Page
 
     {
-        
+
         System.Windows.Threading.DispatcherTimer Timer = new System.Windows.Threading.DispatcherTimer();
 
         private int time = 0;
-        private DispatcherTimer Timer3;     
-     
+        private DispatcherTimer Timer3;
+
         public Goals()
 
         {
 
             InitializeComponent();
 
-           
+
             Timer = new DispatcherTimer();
             Timer.Interval = new TimeSpan(0, 0, 1);
             //Timer.Tick += Timer_Tick;
@@ -54,7 +54,7 @@ namespace Content_Library
 
         }
 
-        
+
 
         private void Timer_Click(object sender, EventArgs e)
 
@@ -97,7 +97,7 @@ namespace Content_Library
         }
 
 
-       
+
         private void maintabcontroal_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
@@ -105,44 +105,57 @@ namespace Content_Library
 
         private void goal_add(object sender, RoutedEventArgs e)
         {
-            
+
             this.NavigationService.Navigate(new GoalEntry());
         }
 
-        private void LoadGoals(object sender, RoutedEventArgs e)
+
+        string name;
+
+        private void b_Click(object sender, RoutedEventArgs e)
+        {
+
+            this.NavigationService.Navigate(new GoalReview());
+            
+        }
+
+        private void loadedp0age(object sender, RoutedEventArgs e)
         {
             //var namessssss = GoalEntry.goalnamess;
             //var tabItem = new TabItem();
             //tabItem.Header = namessssss;
             //tabItem.Content = " ";
             //maintabcontroal.Items.Add(tabItem);
-
-            foreach(var goal in MainWindow.goals) 
-            {
-                Button btn = new Button();
-
-                btn.Height = 80;
-
-                btn.Width = 150;
-
-                btn.Content = goal;
-
-                btn.Background = new SolidColorBrush(Colors.Orange);
-
-                btn.Foreground = new SolidColorBrush(Colors.Black);
-                btn.Click += new RoutedEventHandler(b_Click);
-
-                listbox1.Items.Add(btn);
-            }
+            var g = 0;
+            var x = 0;
+            var w = 0;
+            var nw = -630;
+            var ng = -320;
             
-        }
-        private void b_Click(object sender, RoutedEventArgs e)
-        {
-            //do your button stuff here
-        }
+            foreach (var goal in MainWindow.goals)
+            {
+                
+                g += 80;
+                ng -= 80;
+                if (g == 400) ;
+                {
+                    x +=250;
+                    w = w + x;
+                    nw = nw - x;
 
+                }
+                Button btn = new Button();
+                btn.Height = 80;
+                btn.Width = 150;
+                
+                btn.Content = goal.title;
+                btn.Background  = new SolidColorBrush(Colors.Black);
+                btn.Foreground = new SolidColorBrush(Colors.White);
+                btn.Click += new RoutedEventHandler(b_Click);
+                listbox12.Children.Add(btn);           
+            }
+        }
     }
-
 }  
 
 
