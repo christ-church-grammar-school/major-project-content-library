@@ -8,8 +8,11 @@
       d:DesignHeight="500" d:DesignWidth="800"
       Title="Goals">
 
-    <Grid Background="#FF012247">
-        <Button Content="new goal" HorizontalAlignment="Left" Height="55" Margin="555,435,0,0" VerticalAlignment="Top" Width="235" Click="goal_add"/>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="christ church.jpg"/>
+        </Grid.Background>
+        <Button Content="new goal" HorizontalAlignment="Left" Height="55" Margin="555,435,0,0" VerticalAlignment="Top" Width="235" Click="goal_add" Background="#FFE8CC1F"/>
         <TextBlock x:Name="TBCountDown" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="555,71,0,0" Height="69" Width="222"/>
         <ListBox HorizontalAlignment="Left" Height="100" Margin="520,300,0,0" VerticalAlignment="Top" Width="100"/>
         <ListBox x:Name="listbox1" HorizontalAlignment="Left" Height="85" VerticalAlignment="Top" Width="180" Background="#FF012247"  Margin="597,300,0,0" BorderBrush="#FF012247" Loaded="loadedp0age"/>
