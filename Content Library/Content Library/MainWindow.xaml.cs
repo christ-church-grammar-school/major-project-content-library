@@ -21,11 +21,15 @@ namespace Content_Library
     public partial class MainWindow : Window
     {
 
+        public static Dictionary<string, string> goals;
+
         public static List<List<String>> importantdata = new List<List<String>> { };
 
         public MainWindow()
         {
             InitializeComponent();
+
+            goals = new Dictionary<string, string>();
         }
         
         private void loaded(object sender, RoutedEventArgs e)
