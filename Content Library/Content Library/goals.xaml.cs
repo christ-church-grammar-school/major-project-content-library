@@ -110,12 +110,12 @@ namespace Content_Library
         }
 
 
-        string name;
-
+        
+       
         private void b_Click(object sender, RoutedEventArgs e)
         {
-
-            this.NavigationService.Navigate(new GoalReview());
+            var gindex = ((Button)sender).Tag;
+            this.NavigationService.Navigate(new GoalReview((int)gindex));
             
         }
 
@@ -131,28 +131,24 @@ namespace Content_Library
             var w = 0;
             var nw = -630;
             var ng = -320;
-            
+
+            int gindex = 0;
+
             foreach (var goal in MainWindow.goals)
             {
-                
-                g += 80;
-                ng -= 80;
-                if (g == 400) ;
-                {
-                    x +=250;
-                    w = w + x;
-                    nw = nw - x;
 
-                }
+                
                 Button btn = new Button();
                 btn.Height = 80;
                 btn.Width = 150;
                 
                 btn.Content = goal.title;
+                btn.Tag = gindex;
                 btn.Background  = new SolidColorBrush(Colors.Black);
                 btn.Foreground = new SolidColorBrush(Colors.White);
                 btn.Click += new RoutedEventHandler(b_Click);
-                listbox12.Children.Add(btn);           
+                listbox12.Children.Add(btn);
+                gindex += 1;
             }
         }
     }
