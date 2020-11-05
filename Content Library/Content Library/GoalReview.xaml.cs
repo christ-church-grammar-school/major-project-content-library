@@ -32,7 +32,7 @@ namespace Content_Library
             foreach (var a in g.activites)
             {
                 CheckBox cek = new CheckBox();
-                cek.Content = a;
+                cek.Content = a.name;
                 
                 cek.Background = new SolidColorBrush(Colors.Black);
                 cek.Foreground = new SolidColorBrush(Colors.Orange);
