@@ -98,12 +98,12 @@ namespace Content_Library
 
 
 
-        private void maintabcontroal_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Maintabcontroal_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
 
-        private void goal_add(object sender, RoutedEventArgs e)
+        private void Goal_Add(object sender, RoutedEventArgs e)
         {
 
             this.NavigationService.Navigate(new GoalEntry());
@@ -112,7 +112,7 @@ namespace Content_Library
 
         
        
-        private void b_Click(object sender, RoutedEventArgs e)
+        private void B_Click(object sender, RoutedEventArgs e)
         {
             var gindex = ((Button)sender).Tag;
             this.NavigationService.Navigate(new GoalReview((int)gindex));
@@ -126,11 +126,7 @@ namespace Content_Library
             //tabItem.Header = namessssss;
             //tabItem.Content = " ";
             //maintabcontroal.Items.Add(tabItem);
-            var g = 0;
-            var x = 0;
-            var w = 0;
-            var nw = -630;
-            var ng = -320;
+            
 
             int gindex = 0;
 
@@ -146,11 +142,12 @@ namespace Content_Library
                 btn.Tag = gindex;
                 btn.Background  = new SolidColorBrush(Colors.Black);
                 btn.Foreground = new SolidColorBrush(Colors.White);
-                btn.Click += new RoutedEventHandler(b_Click);
+                btn.Click += new RoutedEventHandler(B_Click);
                 listbox12.Children.Add(btn);
                 gindex += 1;
             }
         }
+
     }
 }  
 

@@ -120,5 +120,14 @@
   <ItemGroup>
     <Resource Include="logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="christ church.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="stringio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Media1.mp4" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

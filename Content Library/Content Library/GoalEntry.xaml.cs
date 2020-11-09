@@ -48,6 +48,10 @@ namespace Content_Library
             this.NavigationService.Navigate(new Goals());
         }
 
+        private void goalname_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }    
     
 }

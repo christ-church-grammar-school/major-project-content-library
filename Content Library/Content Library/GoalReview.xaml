@@ -9,15 +9,27 @@
       Title="Page3">
 
     <Grid>
-        <Grid OpacityMask="#FF112A9B" Background="#FF043156">
+        <Grid OpacityMask="#FF112A9B">
+            <Grid.Background>
+                <ImageBrush ImageSource="stringio.jpg"/>
+            </Grid.Background>
             <Label x:Name="main_title" Content="where goal name will be" HorizontalAlignment="Left" Height="65" Margin="158,35,0,0" VerticalAlignment="Top" Width="423" FontSize="36"/>
-            <ProgressBar HorizontalAlignment="Left" Height="31" Margin="39,118,0,0" VerticalAlignment="Top" Width="736"/>
-            <StackPanel x:Name="ActivityListBox" HorizontalAlignment="Left" Height="248" Margin="39,156,0,0" VerticalAlignment="Top" Width="736" Background="White"/>
-            <TextBox x:Name="new_activity_name" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" VerticalAlignment="Top" Width="355" Margin="39,409,0,0" FontSize="20"/>
+            <ProgressBar x:Name="progress" HorizontalAlignment="Left" Height="31" Margin="24,100,0,0" VerticalAlignment="Top" Width="752" Background="#FF37731B" Foreground="#FF1B2973" BorderBrush="#FF1B299B" RenderTransformOrigin="0.5,0.5">
+                <ProgressBar.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="540.083"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </ProgressBar.RenderTransform>
+            </ProgressBar>
+            <StackPanel x:Name="ActivityListBox" HorizontalAlignment="Left" Height="248" Margin="24,131,0,0" VerticalAlignment="Top" Width="752" Background="#FFA8BDDD" Opacity="0.75"/>
+            <TextBox x:Name="new_activity_name" HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" VerticalAlignment="Top" Width="355" Margin="24,384,0,0" FontSize="20" Background="#FFD0B927" Text="activity"/>
 
         </Grid>
-        <Button Content="Back" HorizontalAlignment="Left" Height="26" Margin="592,414,0,0" VerticalAlignment="Top" Width="185" Click="back"/>
-        <Button Content="new activity" HorizontalAlignment="Left" VerticalAlignment="Top" Width="185" Margin="402,414,0,0" Height="26" Click="new_activity"/>
+        <Button Content="Back" HorizontalAlignment="Left" Height="29" Margin="593,385,0,0" VerticalAlignment="Top" Width="184" Click="Back" Background="#FF1B2973"/>
+        <Button Content="new activity" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="388,385,0,0" Height="29" Click="New_Activity" Background="#FF1B2973"/>
 
     </Grid>
 </Page>
