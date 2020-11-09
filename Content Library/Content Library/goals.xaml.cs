@@ -145,6 +145,7 @@ namespace Content_Library
                 btn.Click += new RoutedEventHandler(B_Click);
                 listbox12.Children.Add(btn);
                 gindex += 1;
+                 
             }
         }
 
